@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ravichandraa — Backend Engineer & Applied AI Architect</title>
+  <meta name="description" content="Portfolio of Ravichandraa — Backend Engineer specializing in Python, Django, REST APIs, PostgreSQL, Oracle OCI Generative AI, and low-level network telemetry. Inspired by Atoms.">
+  <meta name="author" content="Ravichandraa">
+
+  <!-- Google Fonts: Editorial Serif + Modern Clean Sans + JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Reading Progress Indicator (Ben Lin / Obys style) -->
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Obys FORMAT-Style Curtain Preloader -->
+  <div class="site-curtain" id="site-curtain" aria-hidden="true">
+    <div class="curtain-panel curtain-panel-left"></div>
+    <div class="curtain-panel curtain-panel-right"></div>
+    <div class="curtain-content" id="curtain-content">
+      <div class="curtain-badge">BACKEND SYSTEMS & APPLIED AI</div>
+      <div class="curtain-monogram">
+        <svg viewBox="0 0 40 40" width="56" height="56" fill="none">
+          <path d="M29.5 37.5C22.8 39.5 16.1 39.5 9.4 37.5C5.6 36.3 2.6 33.3 1.5 29.5C-0.5 22.8 -0.5 16.1 1.5 9.4C2.6 5.6 5.6 2.6 9.4 1.5C16.1 -0.5 22.8 -0.5 29.5 1.5C33.3 2.6 36.3 5.6 37.5 9.4C39.5 16.1 39.5 22.8 37.5 29.5C36.3 33.3 33.3 36.3 29.5 37.5Z" fill="#242424"/>
+          <circle cx="20" cy="20" r="5.5" fill="#FFDC61"/>
+        </svg>
+      </div>
+      <h2 class="curtain-title">RAVICHANDRAA</h2>
+      <p class="curtain-tagline">Clean schemas, remarkable backends</p>
+      <div class="curtain-line-wrap">
+        <div class="curtain-line-fill" id="curtain-line-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Obys Custom Follower Magnetic Cursor -->
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursor-follower" aria-hidden="true">
+    <span class="cursor-label" id="cursor-label"></span>
+  </div>
+
+  <!-- Top Announcement Banner (Inspired by Atoms Pro Banner) -->
+  <aside class="top-banner">
+    <a href="#contact" class="banner-link">
+      <span class="banner-badge">AVAILABLE</span>
+      <span class="banner-text">Open for <em>Python / Django Backend Developer</em> & <em>AI Integration</em> Internships</span>
+      <svg class="banner-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </aside>
+
+  <!-- Atoms-Style Minimal Sticky Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-link">
+        <div class="brand-pebble">
+          <svg viewBox="0 0 40 40" width="28" height="28" fill="none">
+            <path d="M29.5 37.5C22.8 39.5 16.1 39.5 9.4 37.5C5.6 36.3 2.6 33.3 1.5 29.5C-0.5 22.8 -0.5 16.1 1.5 9.4C2.6 5.6 5.6 2.6 9.4 1.5C16.1 -0.5 22.8 -0.5 29.5 1.5C33.3 2.6 36.3 5.6 37.5 9.4C39.5 16.1 39.5 22.8 37.5 29.5C36.3 33.3 33.3 36.3 29.5 37.5Z" fill="#242424"/>
+            <circle cx="20" cy="20" r="4.5" fill="#FFDC61"/>
+          </svg>
+        </div>
+        <div class="brand-titles">
+          <span class="brand-name">Ravichandraa</span>
+          <span class="brand-sub">The <em>backend</em> software engineer</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="#laws" class="nav-item">Core Laws</a>
+        <a href="#why-different" class="nav-item">Why Different</a>
+        <a href="#projects" class="nav-item">Systems</a>
+        <a href="#notes" class="nav-item">Notes</a>
+        <a href="#credentials" class="nav-item">Credentials</a>
+        <a href="#contact" class="nav-cta-btn">Connect →</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Atoms-Style Hero Section -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-grid">
+        
+        <div class="hero-text-col zoom-reveal">
+          <div class="eyebrow-tag">
+            <span class="tag-dot"></span>
+            <span>Kalaburagi, Karnataka • Sharanbasva University</span>
+          </div>
+
+          <h1 class="hero-headline kinetic-title">
+            <em>Clean schemas,</em> <br>
+            <span class="headline-serif">remarkable backends.</span>
+          </h1>
+
+          <p class="hero-description">
+            Inspired by the principles of sound engineering: I build reliable web backends in Python & Django, design ACID-compliant database architectures, and integrate practical Generative AI.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-dark" data-cursor="explore">
+              <span>Explore My Work</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            </a>
+            <button class="btn btn-outline copy-email-btn" data-email="ravichandraa0011@gmail.com" data-cursor="copy">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              <span>Copy Email</span>
+            </button>
+            <a href="https://github.com/ravichandraa0011" target="_blank" rel="noopener" class="link-social" data-cursor="link">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/ravichandraa5" target="_blank" rel="noopener" class="link-social" data-cursor="link">LinkedIn ↗</a>
+          </div>
+
+          <div class="hero-stat-badges">
+            <div class="stat-badge">
+              <span class="badge-num">2x</span>
+              <span class="badge-lbl">Oracle OCI Certified</span>
+            </div>
+            <div class="badge-separator"></div>
+            <div class="stat-badge">
+              <span class="badge-num">7.3</span>
+              <span class="badge-lbl">B.Tech CGPA (2027)</span>
+            </div>
+            <div class="badge-separator"></div>
+            <div class="stat-badge">
+              <span class="badge-num">0</span>
+              <span class="badge-lbl">N+1 Queries</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual: Product Mockup resting on Organic Pebble with 3D Tilt -->
+        <div class="hero-visual-col zoom-reveal" data-delay="150">
+          <div class="tilt-wrapper" data-tilt="true">
+            <div class="organic-pebble-bg">
+              <svg viewBox="0 0 306 306" width="100%" height="100%" fill="none">
+                <path d="M231.8 294.1C179.4 310 126.6 310 74.2 294.1C44.3 285.1 20.9 261.7 11.9 231.8C-4 179.4 -4 126.6 11.9 74.2C20.9 44.3 44.3 20.9 74.2 11.9C126.6 -4 179.4 -4 231.8 11.9C261.7 20.9 285.1 44.3 294.1 74.2C310 126.6 310 179.4 294.1 231.8C285.1 261.7 261.7 285.1 231.8 294.1Z" fill="#F1ECDF"/>
+              </svg>
+            </div>
+
+            <div class="hero-device-card interactive-hover-zoom" data-cursor="code">
+              <div class="device-bar">
+                <div class="device-dots">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+                <span class="device-title">views.py — College ERP System</span>
+                <span class="device-tag">Python 3</span>
+              </div>
+              <div class="device-code">
+                <pre><code><span class="c-comment"># Free-Teacher Availability Algorithm</span>
+<span class="c-kw">def</span> <span class="c-fn">free_teachers</span>(request):
+    day = request.GET.get(<span class="c-str">'day'</span>)
+    period = request.GET.get(<span class="c-str">'period'</span>)
+    
+    <span class="c-comment"># Subquery: faculty with active lecture slots</span>
+    busy_ids = Timetable.objects.filter(
+        day=day, 
+        period=period
+    ).values_list(<span class="c-str">'assign_id__teacher_id'</span>, flat=<span class="c-kw">True</span>)
+    
+    <span class="c-comment"># Exclude busy faculty to prevent double-booking</span>
+    available = Teacher.objects.exclude(
+        id__in=busy_ids
+    ).select_related(<span class="c-str">'department'</span>)
+    
+    <span class="c-kw">return</span> render(request, <span class="c-str">'info/free_teachers.html'</span>, {
+        <span class="c-str">'teachers'</span>: available,
+        <span class="c-str">'day'</span>: day,
+        <span class="c-str">'period'</span>: period
+    })</code></pre>
+              </div>
+              <div class="device-footer">
+                <span class="footer-icon">⚡</span>
+                <span>Production scheduling algorithm written for my university ERP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- The 4 Laws of Reliable Backend Systems (Direct Homage to Atoms 4 Steps) -->
+    <section class="section laws-section" id="laws">
+      <div class="container">
+        <div class="section-title-wrap zoom-reveal">
+          <span class="kicker">FIRST PRINCIPLES</span>
+          <h2 class="section-heading">Built on the 4 laws of reliable backend engineering</h2>
+        </div>
+
+        <div class="laws-slider-track">
+          <!-- Law 1 -->
+          <div class="law-card zoom-reveal interactive-hover-zoom" data-delay="0" data-cursor="view">
+            <div class="law-num-bubble">1.</div>
+            <h3 class="law-title">Make it <br><em>deterministic.</em></h3>
+            <p class="law-desc">
+              Never trust client data. Validate every payload with strict server-side serializers, boundary checks, and explicit HTTP contracts.
+            </p>
+            <div class="law-tag">Django REST Framework</div>
+          </div>
+
+          <!-- Law 2 -->
+          <div class="law-card zoom-reveal interactive-hover-zoom" data-delay="120" data-cursor="view">
+            <div class="law-num-bubble">2.</div>
+            <h3 class="law-title">Make it <br><em>transactional.</em></h3>
+            <p class="law-desc">
+              Design normalized schemas with database-level constraints (<code class="code-pill">unique_together</code>) so race conditions physically cannot corrupt state.
+            </p>
+            <div class="law-tag">PostgreSQL / MySQL</div>
+          </div>
+
+          <!-- Law 3 -->
+          <div class="law-card zoom-reveal interactive-hover-zoom" data-delay="240" data-cursor="view">
+            <div class="law-num-bubble">3.</div>
+            <h3 class="law-title">Make it <br><em>observable.</em></h3>
+            <p class="law-desc">
+              Understand what happens on the wire. Sniff Layer 3/4 network traffic with Scapy and Wireshark to verify TCP flags and isolate latency.
+            </p>
+            <div class="law-tag">Scapy & Wireshark</div>
+          </div>
+
+          <!-- Law 4 -->
+          <div class="law-card zoom-reveal interactive-hover-zoom" data-delay="360" data-cursor="view">
+            <div class="law-num-bubble">4.</div>
+            <h3 class="law-title">Make it <br><em>grounded.</em></h3>
+            <p class="law-desc">
+              AI without verification is a gamble. Ground foundation models with private database context using vector search to guarantee zero hallucinations.
+            </p>
+            <div class="law-tag">OCI GenAI & pgvector</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why My Engineering Is Different (Atoms-Style Story Slider) -->
+    <section class="section why-section" id="why-different">
+      <div class="container">
+        <div class="section-title-wrap text-center zoom-reveal">
+          <span class="kicker">THE ARCHITECTURE</span>
+          <h2 class="section-heading">Why my approach is different</h2>
+        </div>
+
+        <!-- Atoms Organic Container -->
+        <div class="why-story-box zoom-reveal">
+          <div class="why-nav-dots">
+            <button class="why-dot active" data-story="0" data-cursor="view"><span>01</span></button>
+            <button class="why-dot" data-story="1" data-cursor="view"><span>02</span></button>
+            <button class="why-dot" data-story="2" data-cursor="view"><span>03</span></button>
+            <button class="why-dot" data-story="3" data-cursor="view"><span>04</span></button>
+          </div>
+
+          <div class="why-story-content" id="why-story-content">
+            <!-- Injected / Toggled via JS -->
+            <div class="story-slide active" id="story-0">
+              <div class="story-text">
+                <span class="story-kicker">FLAGSHIP SYSTEM // COLLEGE ERP</span>
+                <h3 class="story-headline">I solve multi-entity scheduling collisions</h3>
+                <p>
+                  Academic departments often struggle with faculty double-bookings. I engineered a Django-based ERP with a dynamic <strong>Free-Teacher Finder</strong> that calculates unscheduled faculty in real time, eliminating substitute allocation chaos.
+                </p>
+                <div class="story-meta">
+                  <span><strong>Stack:</strong> Python, Django, Relational SQL, MVT Architecture</span>
+                </div>
+              </div>
+              <div class="story-visual">
+                <div class="pebble-plate">
+                  <div class="spec-highlight-card">
+                    <div class="spec-row">
+                      <span class="spec-lbl">Collision Check:</span>
+                      <span class="spec-val text-green">100% Guaranteed</span>
+                    </div>
+                    <div class="spec-row">
+                      <span class="spec-lbl">Query Pattern:</span>
+                      <span class="spec-val">Subquery .exclude(id__in=...)</span>
+                    </div>
+                    <div class="spec-row">
+                      <span class="spec-lbl">Constraint:</span>
+                      <span class="spec-val">unique_together(day, period, room)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="story-slide" id="story-1">
+              <div class="story-text">
+                <span class="story-kicker">APPLIED AI // OCI CERTIFIED</span>
+                <h3 class="story-headline">I ground AI in verified vector data</h3>
+                <p>
+                  Rather than sending raw 100-page policy manuals to an open-ended LLM, I built a RAG pipeline with Oracle OCI Generative AI foundation embeddings and PostgreSQL <code class="code-pill">pgvector</code> HNSW indexing, cutting token costs by 85%.
+                </p>
+                <div class="story-meta">
+                  <span><strong>Stack:</strong> Python, OCI GenAI SDK, PostgreSQL (pgvector), DRF</span>
+                </div>
+              </div>
+              <div class="story-visual">
+                <div class="pebble-plate">
+                  <div class="spec-highlight-card">
+                    <div class="spec-row">
+                      <span class="spec-lbl">Recall Latency:</span>
+                      <span class="spec-val text-green">&lt; 45ms (HNSW)</span>
+                    </div>
+                    <div class="spec-row">
+                      <span class="spec-lbl">Embedding Dim:</span>
+                      <span class="spec-val">1024-dim OCI Vector</span>
+                    </div>
+                    <div class="spec-row">
+                      <span class="spec-lbl">Hallucinations:</span>
+                      <span class="spec-val text-green">0 (Strictly Cited)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="story-slide" id="story-2">
+              <div class="story-text">
+                <span class="story-kicker">NETWORK TELEMETRY // SCAPY</span>
+                <h3 class="story-headline">I inspect what actually travels on the wire</h3>
+                <p>
+                  I don't treat networking as an abstract string. Using Python and Scapy, I built a packet sniffer that listens on raw sockets, dissects Layer 3/4 headers, and detects stealth SYN port sweeps in real time before validating via Wireshark.
+                </p>
+                <div class="story-meta">
+                  <span><strong>Stack:</strong> Python, Scapy, Wireshark, Raw Socket Programming</span>
+                </div>
+              </div>
+              <div class="story-visual">
+                <div class="pebble-plate">
+                  <div class="spec-highlight-card">
+                    <div class="spec-row">
+                      <span class="spec-lbl">Capture Scope:</span>
+                      <span class="spec-val">TCP / UDP / ICMP / IP</span>
+                    </div>
+                    <div class="spec-row">
+                      <span class="spec-lbl">Heuristic Window:</span>
+                      <span class="spec-val">&gt; 15 ports in 2.0s</span>
+                    </div>
+                    <div class="spec-row">
+                      <span class="spec-lbl">Discrepancy:</span>
+                      <span class="spec-val text-green">0% vs Wireshark Trace</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="story-slide" id="story-3">
+              <div class="story-text">
+                <span class="story-kicker">DISTRIBUTED ASYNC // CELERY & REDIS</span>
+                <h3 class="story-headline">I decouple heavy jobs from HTTP cycles</h3>
+                <p>
+                  Compiling heavy semester PDF reports used to freeze the server for 8 seconds. I extracted reporting into an asynchronous Celery queue with a Redis message broker, slashing endpoint latency down to 22ms.
+                </p>
+                <div class="story-meta">
+                  <span><strong>Stack:</strong> Celery, Redis, Django REST Framework, Docker</span>
+                </div>
+              </div>
+              <div class="story-visual">
+                <div class="pebble-plate">
+                  <div class="spec-highlight-card">
+                    <div class="spec-row">
+                      <span class="spec-lbl">Latency Drop:</span>
+                      <span class="spec-val text-green">8,000ms ➔ 22ms</span>
+                    </div>
+                    <div class="spec-row">
+                      <span class="spec-lbl">Throttling:</span>
+                      <span class="spec-val">Redis Atomic Sliding Window</span>
+                    </div>
+                    <div class="spec-row">
+                      <span class="spec-lbl">Retries:</span>
+                      <span class="spec-val">Exponential Backoff</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="why-story-controls">
+            <button class="btn btn-sm btn-outline prev-story-btn" data-cursor="explore">← Previous</button>
+            <button class="btn btn-sm btn-dark next-story-btn" data-cursor="explore">Next Principle →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section: Interactive Feature Showcase -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-title-wrap zoom-reveal">
+          <span class="kicker">PROJECT SHOWCASE</span>
+          <h2 class="section-heading">Systems engineered with care</h2>
+          <p class="section-subtitle">
+            Switch between <strong>The Story</strong>, <strong>Schema Architecture</strong>, and <strong>Key Code Logic</strong> on each project card.
+          </p>
+        </div>
+
+        <div class="projects-stack">
+
+          <!-- Project 1: College ERP -->
+          <article class="project-box zoom-reveal interactive-hover-zoom" data-cursor="view">
+            <div class="box-top">
+              <div>
+                <span class="badge-pill pill-yellow">Flagship Project</span>
+                <h3 class="box-title">College ERP Management System</h3>
+                <p class="box-tagline">Academic Resource Planning with Dynamic Substitute Faculty Allocation</p>
+              </div>
+              <a href="https://github.com/ravichandraa0011" target="_blank" class="btn btn-sm btn-outline" data-cursor="link">GitHub Repo ↗</a>
+            </div>
+
+            <div class="box-tabs" data-tabs="erp">
+              <div class="tab-pills">
+                <button class="tab-pill active" data-tab="story" data-cursor="link">Why I Built This</button>
+                <button class="tab-pill" data-tab="schema" data-cursor="link">Database & Schema</button>
+                <button class="tab-pill" data-tab="code" data-cursor="link">Key Code Logic</button>
+              </div>
+
+              <div class="tab-pane active" data-pane="story">
+                <p>Faculty absence led to frantic manual phone calls and accidental double-booking of lecture halls. I built this Django web app to automate scheduling, manage student records, and calculate free faculty availability on demand.</p>
+                <ul class="takeaway-list">
+                  <li>Custom administrative lookup hooks (<code class="code-pill">RelatedObjectLookups.js</code>) for seamless foreign key inspection.</li>
+                  <li>Multi-role RBAC partitioned between Deans, Teaching Staff, and Students.</li>
+                </ul>
+              </div>
+
+              <div class="tab-pane" data-pane="schema">
+                <div class="schema-card">
+                  <div><strong>Teacher</strong> (id, dept_id ➔ Dept, name, email, phone)</div>
+                  <div><strong>Class</strong> (id, dept_id ➔ Dept, semester, section)</div>
+                  <div><strong>Assign</strong> (id, teacher_id ➔ Teacher, class_id ➔ Class, course_id ➔ Course)</div>
+                  <div><strong>Timetable</strong> (id, assign_id ➔ Assign, day, period, room) <em>[Unique constraint on day+period+room]</em></div>
+                </div>
+              </div>
+
+              <div class="tab-pane" data-pane="code">
+                <pre class="code-snippet"><code><span class="c-comment"># Prevent concurrent lecture hall bookings</span>
+<span class="c-kw">class</span> <span class="c-cls">Timetable</span>(models.Model):
+    assign = models.ForeignKey(Assign, on_delete=models.CASCADE)
+    day = models.CharField(max_length=<span class="c-str">15</span>, choices=DAYS_OF_WEEK)
+    period = models.CharField(max_length=<span class="c-str">10</span>, choices=PERIODS)
+    room = models.CharField(max_length=<span class="c-str">20</span>)
+
+    <span class="c-kw">class</span> <span class="c-cls">Meta</span>:
+        unique_together = ((<span class="c-str">'day'</span>, <span class="c-str">'period'</span>, <span class="c-str">'room'</span>),)</code></pre>
+              </div>
+            </div>
+
+            <div class="box-footer">
+              <span class="footer-label">Technologies:</span>
+              <span class="tech-chip">Python</span>
+              <span class="tech-chip">Django MVT</span>
+              <span class="tech-chip">PostgreSQL / MySQL</span>
+              <span class="tech-chip">JavaScript</span>
+            </div>
+          </article>
+
+          <!-- Project 2: OCI GenAI RAG Pipeline -->
+          <article class="project-box zoom-reveal interactive-hover-zoom" data-cursor="view">
+            <div class="box-top">
+              <div>
+                <span class="badge-pill pill-blue">Applied AI Architecture</span>
+                <h3 class="box-title">Enterprise Cognitive RAG Search Service</h3>
+                <p class="box-tagline">Semantic Document Retrieval via Oracle OCI Generative AI & pgvector HNSW</p>
+              </div>
+              <a href="https://github.com/ravichandraa0011" target="_blank" class="btn btn-sm btn-outline" data-cursor="link">GitHub Repo ↗</a>
+            </div>
+
+            <div class="box-tabs" data-tabs="rag">
+              <div class="tab-pills">
+                <button class="tab-pill active" data-tab="story" data-cursor="link">Why I Built This</button>
+                <button class="tab-pill" data-tab="schema" data-cursor="link">Vector Retrieval Flow</button>
+                <button class="tab-pill" data-tab="code" data-cursor="link">Key Code Logic</button>
+              </div>
+
+              <div class="tab-pane active" data-pane="story">
+                <p>Dense administrative circulars and syllabi are unsearchable with basic keywords, while naive LLMs hallucinate exam dates. This microservice indexes PDF chunks with OCI Foundation embeddings and queries them using PostgreSQL <code class="code-pill">pgvector</code> HNSW cosine distance for sub-second factual responses.</p>
+              </div>
+
+              <div class="tab-pane" data-pane="schema">
+                <div class="schema-card">
+                  <div>1. PDF Ingestion ➔ Recursive Token Chunker (500 tokens, 50 overlap)</div>
+                  <div>2. OCI Foundation Embedding Model (1024-dimension float array)</div>
+                  <div>3. PostgreSQL Table: <code class="code-pill">embedding vector(1024)</code></div>
+                  <div>4. HNSW Cosine Index: <code class="code-pill">ORDER BY embedding &lt;=&gt; query_vector LIMIT 3</code></div>
+                </div>
+              </div>
+
+              <div class="tab-pane" data-pane="code">
+                <pre class="code-snippet"><code><span class="c-comment"># Top-3 nearest neighbor semantic recall</span>
+results = DocumentChunk.objects.raw(<span class="c-str">"""
+    SELECT id, content, page_number, 
+           1 - (embedding &lt;=&gt; %s::vector) AS similarity
+    FROM knowledge_chunks
+    ORDER BY embedding &lt;=&gt; %s::vector
+    LIMIT 3
+"""</span>, [query_vector, query_vector])</code></pre>
+              </div>
+            </div>
+
+            <div class="box-footer">
+              <span class="footer-label">Technologies:</span>
+              <span class="tech-chip">Python</span>
+              <span class="tech-chip">Oracle OCI GenAI</span>
+              <span class="tech-chip">PostgreSQL (pgvector)</span>
+              <span class="tech-chip">Django REST</span>
+            </div>
+          </article>
+
+          <!-- Project 3: A1 NETWORKS -->
+          <article class="project-box zoom-reveal interactive-hover-zoom" data-cursor="view">
+            <div class="box-top">
+              <div>
+                <span class="badge-pill pill-amber">Workforce Marketplace</span>
+                <h3 class="box-title">A1 NETWORKS: Dual-Ecosystem Labor Exchange</h3>
+                <p class="box-tagline">Inclusive Platform Connecting Corporate Careers with Skilled Vocational Trade Opportunities</p>
+              </div>
+              <a href="https://github.com/ravichandraa0011" target="_blank" class="btn btn-sm btn-outline" data-cursor="link">GitHub Repo ↗</a>
+            </div>
+
+            <div class="box-tabs" data-tabs="a1">
+              <div class="tab-pills">
+                <button class="tab-pill active" data-tab="story" data-cursor="link">Why I Built This</button>
+                <button class="tab-pill" data-tab="schema" data-cursor="link">Dual-Market Schema</button>
+                <button class="tab-pill" data-tab="code" data-cursor="link">Key Code Logic</button>
+              </div>
+
+              <div class="tab-pane active" data-pane="story">
+                <p>Traditional job platforms exclusively serve resume-backed corporate jobs and overlook essential vocational trade labor (electricians, technicians, logistics workers, on-demand field staff). I built A1 Networks in Django to bridge this gap, unifying credentialed career postings with instant-availability skilled trade gigs.</p>
+                <ul class="takeaway-list">
+                  <li>Bifurcated opportunity models supporting resume uploads alongside immediate on-demand trade callouts.</li>
+                  <li>Role-based user permissions separating Corporate Recruiters, Vocational Contractors, and Job Seekers.</li>
+                  <li>Fast query filtering by skill verification, trade category, and geographic availability radius.</li>
+                </ul>
+              </div>
+
+              <div class="tab-pane" data-pane="schema">
+                <div class="schema-card">
+                  <div><strong>Profile</strong> (id, user_id, user_type: ['CORP_EMPLOYER', 'TRADE_PRO', 'APPLICANT'], location, verified)</div>
+                  <div><strong>CorporateJob</strong> (id, employer_id ➔ Profile, title, department, min_exp, resume_req)</div>
+                  <div><strong>VocationalGig</strong> (id, contractor_id ➔ Profile, trade_skill, hourly_rate, immediate_available)</div>
+                  <div><strong>Application</strong> (id, applicant_id ➔ Profile, target_id, application_type, status)</div>
+                </div>
+              </div>
+
+              <div class="tab-pane" data-pane="code">
+                <pre class="code-snippet"><code><span class="c-comment"># Optimized query resolving bifurcated opportunity listings</span>
+<span class="c-kw">def</span> <span class="c-fn">get_market_opportunities</span>(user_type, trade_filter=<span class="c-kw">None</span>):
+    <span class="c-kw">if</span> user_type == <span class="c-str">'VOCATIONAL'</span>:
+        <span class="c-kw">return</span> VocationalGig.objects.filter(
+            immediate_available=<span class="c-kw">True</span>
+        ).select_related(<span class="c-str">'contractor'</span>).order_by(<span class="c-str">'-created_at'</span>)
+    <span class="c-kw">else</span>:
+        <span class="c-kw">return</span> CorporateJob.objects.filter(
+            is_active=<span class="c-kw">True</span>
+        ).select_related(<span class="c-str">'employer'</span>).order_by(<span class="c-str">'-posted_date'</span>)</code></pre>
+              </div>
+            </div>
+
+            <div class="box-footer">
+              <span class="footer-label">Technologies:</span>
+              <span class="tech-chip">Python</span>
+              <span class="tech-chip">Django</span>
+              <span class="tech-chip">Relational SQL</span>
+              <span class="tech-chip">MVT Architecture</span>
+              <span class="tech-chip">Role-Based Auth</span>
+            </div>
+          </article>
+
+          <!-- Compact Project Cards -->
+          <div class="project-duo">
+            <div class="duo-card zoom-reveal interactive-hover-zoom" data-cursor="view">
+              <span class="badge-pill pill-green">Systems & Networking</span>
+              <h4>Live Network Traffic Sniffer & Anomaly Monitor</h4>
+              <p>Captures Layer 3/4 network packets via Scapy on raw sockets, maintaining an in-memory sliding window to detect stealth SYN port scans with Wireshark trace validation.</p>
+              <div class="duo-tags">
+                <span>Python</span> <span>Scapy</span> <span>Wireshark</span> <span>Sockets</span>
+              </div>
+            </div>
+
+            <div class="duo-card zoom-reveal interactive-hover-zoom" data-cursor="view">
+              <span class="badge-pill pill-amber">Distributed Systems</span>
+              <h4>Async Job Dispatcher & Rate-Limited Gateway</h4>
+              <p>Decoupled heavy PDF report generation into asynchronous Celery worker queues with a Redis broker, implementing an atomic sliding-window rate limiter in Django.</p>
+              <div class="duo-tags">
+                <span>Celery</span> <span>Redis</span> <span>Django REST</span> <span>Docker</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Engineering Notes (Atoms-Style Clean Thought Pieces) -->
+    <section class="section notes-section" id="notes">
+      <div class="container">
+        <div class="section-title-wrap zoom-reveal">
+          <span class="kicker">PRACTICE & REFLECTION</span>
+          <h2 class="section-heading">How I think about backend systems</h2>
+        </div>
+
+        <div class="notes-grid">
+          <div class="note-item zoom-reveal interactive-hover-zoom" data-cursor="read">
+            <div class="note-num">01</div>
+            <h3 class="note-header">Database schemas outlive code</h3>
+            <p>You can refactor ugly Python code in an afternoon. But migrating a malformed relational database schema with millions of rows in production is dangerous. I always spend extra time normalizing entities, choosing strict foreign keys, and planning indexes.</p>
+          </div>
+
+          <div class="note-item zoom-reveal interactive-hover-zoom" data-cursor="read">
+            <div class="note-num">02</div>
+            <h3 class="note-header">Beware the silent N+1 query</h3>
+            <p>Django's ORM is wonderful until you iterate over a related field in a template and quietly trigger 300 database queries for 300 rows. Learning to proactively apply <code class="code-pill">select_related</code> and <code class="code-pill">prefetch_related</code> fundamentally changed how I write endpoints.</p>
+          </div>
+
+          <div class="note-item zoom-reveal interactive-hover-zoom" data-cursor="read">
+            <div class="note-num">03</div>
+            <h3 class="note-header">AI is a component, not magic</h3>
+            <p>Having earned dual Oracle OCI certifications in Generative AI and Data Science, my principle is simple: LLMs are probabilistic text predictors. Unless you ground them with verified vector context and validate their output with server schemas, you are gambling with reliability.</p>
+          </div>
+
+          <div class="note-item zoom-reveal interactive-hover-zoom" data-cursor="read">
+            <div class="note-num">04</div>
+            <h3 class="note-header">Understand the wire</h3>
+            <p>Sniffing packets with Scapy demystified the network for me. Understanding how TCP SYN, ACK, and FIN flags look in raw hexadecimal makes you a much better debugger when an API call times out across production gateways.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Credentials & Education -->
+    <section class="section creds-section" id="credentials">
+      <div class="container">
+        <div class="section-title-wrap zoom-reveal">
+          <span class="kicker">ACADEMIC & PROFESSIONAL</span>
+          <h2 class="section-heading">Verified credentials & education</h2>
+        </div>
+
+        <div class="creds-grid">
+          <div class="edu-card zoom-reveal interactive-hover-zoom" data-cursor="view">
+            <span class="kicker">EDUCATION</span>
+            <h3 class="edu-title">B.Tech in Computer Science & Engineering</h3>
+            <div class="edu-inst">Sharanbasva University, Kalaburagi, Karnataka</div>
+            <div class="edu-timeline">2023 — Expected 2027 • Current CGPA: <strong>7.3 / 10</strong></div>
+            <div class="coursework-list">
+              <span class="cw-chip">Data Structures & Algorithms</span>
+              <span class="cw-chip">DBMS</span>
+              <span class="cw-chip">Operating Systems</span>
+              <span class="cw-chip">Computer Networks</span>
+              <span class="cw-chip">Software Engineering</span>
+            </div>
+          </div>
+
+          <div class="certs-column">
+            <div class="cert-row gold-cert zoom-reveal interactive-hover-zoom" data-cursor="view">
+              <div class="cert-badge-icon">🏆</div>
+              <div>
+                <div class="cert-name">Oracle OCI Generative AI Professional</div>
+                <div class="cert-desc">Foundation models, fine-tuning, embeddings, and enterprise RAG architecture.</div>
+              </div>
+            </div>
+
+            <div class="cert-row gold-cert zoom-reveal interactive-hover-zoom" data-cursor="view">
+              <div class="cert-badge-icon">🏆</div>
+              <div>
+                <div class="cert-name">Oracle OCI Data Science Professional</div>
+                <div class="cert-desc">Machine learning lifecycles, data processing pipelines, and cloud model endpoints.</div>
+              </div>
+            </div>
+
+            <div class="cert-row zoom-reveal interactive-hover-zoom" data-cursor="view">
+              <div class="cert-badge-icon">📜</div>
+              <div>
+                <div class="cert-name">EY & Microsoft AI Skills Passport</div>
+                <div class="cert-desc">Applied AI literacy, ethical guidelines, and enterprise implementation.</div>
+              </div>
+            </div>
+
+            <div class="cert-row zoom-reveal interactive-hover-zoom" data-cursor="view">
+              <div class="cert-badge-icon">📜</div>
+              <div>
+                <div class="cert-name">AICTE Full Stack Web Development with AI Tools</div>
+                <div class="cert-desc">Government-accredited immersive web development & AI developer workflows.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Atoms-Style Warm CTA Footer Section -->
+    <section class="section cta-section" id="contact">
+      <div class="container">
+        <div class="cta-pebble-box zoom-reveal">
+          <div class="cta-inner">
+            <span class="kicker">LET'S CONNECT</span>
+            <h2 class="cta-heading">Cast a vote for reliable backend engineering.</h2>
+            <p class="cta-desc">
+              I am actively seeking a <strong>Python / Django Backend Developer Internship</strong> where I can write clean code, solve real database challenges, and contribute to an ambitious development team.
+            </p>
+
+            <div class="contact-cards-row">
+              <div class="contact-pill" data-cursor="copy">
+                <span class="c-icon">✉️</span>
+                <a href="mailto:ravichandraa0011@gmail.com" class="c-link">ravichandraa0011@gmail.com</a>
+                <button class="btn btn-sm btn-ghost copy-btn" data-copy="ravichandraa0011@gmail.com">Copy</button>
+              </div>
+
+              <div class="contact-pill" data-cursor="copy">
+                <span class="c-icon">📞</span>
+                <a href="tel:+919110291132" class="c-link">+91 9110291132</a>
+                <button class="btn btn-sm btn-ghost copy-btn" data-copy="+919110291132">Copy</button>
+              </div>
+
+              <div class="contact-pill" data-cursor="link">
+                <span class="c-icon">💼</span>
+                <a href="https://www.linkedin.com/in/ravichandraa5" target="_blank" class="c-link">LinkedIn Profile ↗</a>
+              </div>
+
+              <div class="contact-pill" data-cursor="link">
+                <span class="c-icon">💻</span>
+                <a href="https://www.github.com/ravichandraa0011" target="_blank" class="c-link">GitHub Profile ↗</a>
+              </div>
+            </div>
+
+            <div class="cta-location-tag">
+              <span>📍 Kalaburagi, Karnataka, India • Available for on-site, hybrid, or remote internships</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Atoms-Style Footer -->
+  <footer class="site-footer">
+    <div class="container footer-flex">
+      <div class="footer-left">
+        <div class="footer-brand">RAVICHANDRAA</div>
+        <div class="footer-caption">Tiny changes, remarkable results. Built with clean HTML, vanilla CSS & ES6+.</div>
+      </div>
+      <div class="footer-right">
+        <a href="#hero" class="back-top-link" data-cursor="link">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast-notice" id="toast-notice"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
